@@ -1,3 +1,7 @@
 */*.DS_Store
 */*.ipynb_checkpoints/
 .ipynb_checkpoints/
+udacity/notMNIST_large
+udacity/notMNIST_small
+udacity/notMNIST_large.tar.gz
+udacity/notMNIST_small.tar.gz
