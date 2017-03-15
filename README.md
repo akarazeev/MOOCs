@@ -2,6 +2,7 @@
 
 #### 2017-03
 [deepnlp-2017](deepnlp-2017/roadmap.md)
+[deeplearningbook](deeplearningbook/README.md)
 
 #### 2017-02
 [Cart-Pole Balancing with Q-Learning](https://medium.com/@tuzzer/cart-pole-balancing-with-q-learning-b54c6068d947#.mok6mb4an)
