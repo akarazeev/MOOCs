@@ -1,3 +1,4 @@
 ignore/
 **/*.texpadtmp
 *.DS_Store
+**/*.synctex.gz
