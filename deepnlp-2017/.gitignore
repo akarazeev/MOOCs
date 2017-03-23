@@ -1,1 +1,3 @@
 ignore/
+**/*.texpadtmp
+*.DS_Store
