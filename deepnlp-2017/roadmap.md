@@ -7,8 +7,8 @@
 - [x] Lecture 2b
 - [x] Lecture 3
 - [x] Make Quiz
-- [ ] Lecture 4
-- [ ] Make Quiz
+- [x] Lecture 4
+- [x] Make Quiz
 
 #### Первое занятие [[link]](http://info.deephack.me/?p=572)
 Ссылка на лекции - [github](https://github.com/oxford-cs-deepnlp-2017/lectures)
@@ -143,3 +143,30 @@
     - large rnn often overfit their training data my memorizing the sequences they learn
     - how apply dropout - do not zero all hidden units but apply it to non-recurrent connections
     - Bayesian Dropout
+
+#### Lecture 5 - Text Classification
+
+- Classification Tasks
+    - pos/neg
+    - topic
+    - hashtags for twitter
+- binary/multi-class/multi-label/clustering classification
+- Classification methods:
+    - By hand
+    - Rule-based
+    - Statistical
+- Text label - d, Class - c:
+    - how to represent d?
+    - how to calculate P(c|d)?
+- Possible Representations:
+    - Bag of words
+    - Hand-crafted features (makes use of NLP pipeline - ???)
+    - Learned feature representation
+- Generative vs Discriminative Models:
+    - Generative (joint) models: P(c, d)
+        - distribution of individual classes
+        - n-gram, HMM, IBM translation models, Naive Bayes
+    - Discriminative (conditional) models: P(c|d)
+        - learn boundaries between classes
+        - log regression, max entropy models, conditional random fields, svm
+    - 
