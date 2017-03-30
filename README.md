@@ -1,7 +1,7 @@
 ## MOOCs
 
 #### 2017-03
-- [deepnlp-2017](deepnlp-2017/roadmap.md)
+- [deepnlp-2017](deepnlp-2017/)
 - [deeplearningbook](deeplearningbook/README.md)
 - [udacity/](udacity/)
 

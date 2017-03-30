@@ -11,6 +11,10 @@
 - [x] Make Quiz
 - [x] Lecture 5
 - [x] Make Quiz
+- [ ] Lecture 7
+- [ ] Lecture 8
+- [ ] Lecture 11
+- [ ] Lecture 12
 
 #### Первое занятие [[link]](http://info.deephack.me/?p=572)
 Ссылка на лекции - [github](https://github.com/oxford-cs-deepnlp-2017/lectures)
