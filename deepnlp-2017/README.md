@@ -11,7 +11,7 @@
 - [x] Make Quiz
 - [x] Lecture 5
 - [x] Make Quiz
-- [ ] Lecture 7
+- [x] Lecture 7
 - [ ] Lecture 8
 - [ ] Lecture 11
 - [ ] Lecture 12
@@ -211,4 +211,14 @@
     - Good - learn interactions among local features in context, long dependencies can be learnt. Bad - sentences have different lengths
     - RNN Decoder - p(tom|s,<s>) x p(likes|s,<s>,tom) x p(beer|s,<s>,tom,likes) x p(<\s>|s,<s>,tom,likes,beer)
     - Sutskever et al. (2014) - LSTM Encoder-Decoder
-    
+    - Good - RNNs deal with seqs of various lengths, LSTMs can prop grads a long distance, simple architecture. Bad - hidden state has to remember a lot of information!
+    - Trick#1 - read the input seq "backwards": +4 BLEU
+    - Trick#2 - use an ensemble of J independently trained models: ensemble of 2 models gives +3 BLEU, ensemble of 5 models gives +4.5 BLEU
+    - We want to fine the most probable (MAP) output given the input: w^* = arg max p(w|x). It's a hard (undecidable) problem for RNNs, approximate it with a **greedy search**: w^\*\_1 = arg max p(w_1 | x), w^\*\_2 = arg max p(w_2 | x, w^\*\_1), ...
+    - Better approximation - **beam search** (keep track of top b hypothesis - beam size b).
+    - Use beam search: +1 BLEU
+- Image cation generation
+- Kiros et al. (2013) - Innovation: **multiplicative interactions** in the decoder n-gram model
+    - Encoder: x = embed(x)
+    - Unconditional n-gram model: h=W[w, ...]
+    - Simple conditional n-gram LM: h=W[w, ...] + Cx
