@@ -196,3 +196,19 @@
         - Convolutional layer with multiple filters
         - Max-Pooling Layer
         - R^{M x N x K} where M - number of input words, N - size of the input embeddings and K - number of feature maps
+
+#### Lecture 7 - Conditional Language Models
+
+- Unconditional LM assigns probs to seqs of words w=(w1, ..., wl)
+- Task: modeling prob of the next word by the history of prevs words
+- Conditional LM assigns probs to seqs of words by the conditioning context x
+- to train we need paired samples {(x, w)}
+- w^* = arg max p(w | x). Approximate it using a **beam search**.
+- Evaluating conditional LMs - using cross-entropy or perplexity. Or easier and interpretable - Task-specific evaluation: **BLEU**, **METEOR**, **WER**, **ROUGE** - metric L(w^\*, w_{ref})
+- Encoder-Decoder model
+    - how should we define c=embed(x)?
+    - Convolutional sentence model (CSM)
+    - Good - learn interactions among local features in context, long dependencies can be learnt. Bad - sentences have different lengths
+    - RNN Decoder - p(tom|s,<s>) x p(likes|s,<s>,tom) x p(beer|s,<s>,tom,likes) x p(<\s>|s,<s>,tom,likes,beer)
+    - Sutskever et al. (2014) - LSTM Encoder-Decoder
+    
