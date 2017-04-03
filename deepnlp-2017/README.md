@@ -222,3 +222,30 @@
     - Encoder: x = embed(x)
     - Unconditional n-gram model: h=W[w, ...]
     - Simple conditional n-gram LM: h=W[w, ...] + Cx
+
+#### Lecture 8 - Generating Language with Attention
+
+- Compressing a lot of information in a finite-sized vector
+- “You can't cram the meaning of a whole %&!$# sentence into a single $&!#* vector!"
+- Represent a source sentence as a matrix
+    - vectors have the same size but the matrices have different amount of columns
+    - with Convolutional Nets
+    - most widely used matrix representation - Bidirectional RNNs
+        - forward representation - word and its left context
+        - reverse representation - word and its right context
+        - GRUs or LSTMs
+        - about dimension: 500-1000-2000 dimensions are plenty for most of this problems
+        - if you use very large vectors and you don't have much training data you tend to overfit. if you don't use enough dimensions you are not gonna learn the function good enough. we don't do a lot of pretraining so we don't often tun word2vec and don't use word embeddings of word2vec. it doesn't seem to help in very many cases. what w2v learns isn't good enough for this type of task.
+        - is word2vec a good representation of words for this task?
+        - in what types of tasks the pretraining is much effective - if we were working on very lower-resource machine translation task pretraining is probably more effective
+        - "Multi-word expressions are a pain in the neck." - maybe LSTMs will help...
+- Generation from Matrices
+- High-level idea:
+    - generate output sentence word by word using an RNN
+    - at each position t the RNN receives **two** inputs:
+        - a vector of prevs output
+        - a vector "view" of the input matrix
+    - getting a fixed-sized vector from a matrix that changes over time:
+        - weighted sum of the columns of **F** (words) based on how important they are at the current time step (just a matrix-vector product **Fa_t**)
+        - the weighting if the input columns at each time-step (a_t) is called **attention**
+- 
