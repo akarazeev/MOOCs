@@ -25,8 +25,13 @@
 
 #### Второе занятие [[link]](http://info.deephack.me/?p=577)
 
-#### Третье занятие [[link]]()
+#### Третье занятие [[link]](http://info.deephack.me/?p=580)
 
+#### Четвертое занятие [[link]](http://info.deephack.me/?p=591)
+
+#### Пятое занятие [[link]](http://info.deephack.me/?p=595)
+
+#### Шестое занятие [[link]](http://info.deephack.me/?p=598)
 
 ---
 
@@ -248,4 +253,4 @@
     - getting a fixed-sized vector from a matrix that changes over time:
         - weighted sum of the columns of **F** (words) based on how important they are at the current time step (just a matrix-vector product **Fa_t**)
         - the weighting if the input columns at each time-step (a_t) is called **attention**
-- 
+-
