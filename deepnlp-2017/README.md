@@ -253,4 +253,7 @@
     - getting a fixed-sized vector from a matrix that changes over time:
         - weighted sum of the columns of **F** (words) based on how important they are at the current time step (just a matrix-vector product **Fa_t**)
         - the weighting if the input columns at each time-step (a_t) is called **attention**
--
+- What is attention component responsible for? How do we compute attention vector?
+- ... compute the **attention energy** ...
+- Nonlinear Attention-Energy Model
+- 
