@@ -12,7 +12,7 @@
 - [x] Lecture 5
 - [x] Make Quiz
 - [x] Lecture 7
-- [ ] Lecture 8
+- [x] Lecture 8
 - [ ] Lecture 11
 - [ ] Lecture 12
 
@@ -256,4 +256,14 @@
 - What is attention component responsible for? How do we compute attention vector?
 - ... compute the **attention energy** ...
 - Nonlinear Attention-Energy Model
-- 
+- `BLEU doesn't always correlate well with human judgements. You can get perfectly good translation with bad BLEU score. It depends a lot on the language that you use. From Chinese to English - you have a lot of optionality. Translation evaluation is a huge problem`
+- `If you are comparing two different models on the same text set, you will be able to distinguish models by theirs quality of translation - so BLEU score is meaningful here. In this type of task.`
+- Model Variant
+- Early binding vs Late binding
+- Attention and Translation
+- **Image caption generation with attention**
+    - ConvNets
+    - attention vectors for images
+        - Deterministic soft attention
+        - Stochastic hard attention
+        - analogy with Reinforcement learning...
