@@ -239,10 +239,8 @@
         - forward representation - word and its left context
         - reverse representation - word and its right context
         - GRUs or LSTMs
-        - about dimension: 500-1000-2000 dimensions are plenty for most of this problems
-        - if you use very large vectors and you don't have much training data you tend to overfit. if you don't use enough dimensions you are not gonna learn the function good enough. we don't do a lot of pretraining so we don't often tun word2vec and don't use word embeddings of word2vec. it doesn't seem to help in very many cases. what w2v learns isn't good enough for this type of task.
-        - is word2vec a good representation of words for this task?
-        - in what types of tasks the pretraining is much effective - if we were working on very lower-resource machine translation task pretraining is probably more effective
+        - about dimensions for word embeddings: 500-1000-2000 dimensions are plenty for most of this problems
+        - pre-training is effective in tasks on low-resource machine translation
         - "Multi-word expressions are a pain in the neck." - maybe LSTMs will help...
 - Generation from Matrices
 - High-level idea:
@@ -256,8 +254,6 @@
 - What is attention component responsible for? How do we compute attention vector?
 - ... compute the **attention energy** ...
 - Nonlinear Attention-Energy Model
-- `BLEU doesn't always correlate well with human judgements. You can get perfectly good translation with bad BLEU score. It depends a lot on the language that you use. From Chinese to English - you have a lot of optionality. Translation evaluation is a huge problem`
-- `If you are comparing two different models on the same text set, you will be able to distinguish models by theirs quality of translation - so BLEU score is meaningful here. In this type of task.`
 - Model Variant
 - Early binding vs Late binding
 - Attention and Translation
