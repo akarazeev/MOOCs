@@ -263,3 +263,14 @@
         - Deterministic soft attention
         - Stochastic hard attention
         - analogy with Reinforcement learning...
+
+#### Lecture 11 - Question Answering
+
+- Source of answer
+- Semantic Parsing: Q -> Logical Form -> KB (Knowledge Base) Query -> Answer
+- (relation, entity1, entity2); Google Knowledge Graph, WikiData
+- KBs are cheap but Supervised Data is expensive
+- Semantic parsing can be viewed as seq2seq model
+    - using attention can be useful
+    - Pointer Networks
+    - 
