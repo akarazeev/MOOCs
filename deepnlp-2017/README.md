@@ -274,14 +274,14 @@
 - KBs are cheap but Supervised Data is expensive
 - Semantic parsing can be viewed as seq2seq model
     - using attention can be useful
-    - Pointer Networks
+    - Pointer Networks [[link](https://arxiv.org/pdf/1506.03134.pdf)]
 - Each of these examples [some questions and statements] requires a different underlying KB.
 - Corpora for `Reading Comprehension`
     - CNN/DailyMail - replace all entities with anonymized markers. It reduces vocab size
     - Generic Neural Model for Reading Comprehension: p(a|q,d) ~ exp(W(a)g(q,d)), a \in vocab
     - [using Bidirectional RNN] RC with Attention
 - `Attentive Reader Training` (using RMSprop)
-- `Attention Sum Reader` (Kadlec et. al. 2016, Text Understanding with the ASR network)
+- `Attention Sum Reader` (Kadlec et. al. 2016, Text Understanding with the ASR network [[link](https://arxiv.org/pdf/1603.01547.pdf)])
 
 | pros     | cons     |
 | :------------- | :------------- |
