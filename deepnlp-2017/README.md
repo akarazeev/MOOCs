@@ -324,3 +324,5 @@
 | :------------- | :------------- |
 | extra modality 'for free'    |  currently quite gimmicky  |
 | plenty of training data available as of recently | still a long way to go |
+
+#### Lecture 12 - Memory
