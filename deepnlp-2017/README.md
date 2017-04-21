@@ -1,20 +1,8 @@
 # DeepNLP [[oxford-cs-deepnlp-2017]](https://github.com/oxford-cs-deepnlp-2017/lectures)
 
 **TODO:**
-- [x] Lecture 1a
-- [x] Lecture 1b
-- [x] Lecture 2a
-- [x] Lecture 2b
-- [x] Lecture 3
-- [x] Make Quiz
-- [x] Lecture 4
-- [x] Make Quiz
-- [x] Lecture 5
-- [x] Make Quiz
-- [x] Lecture 7
-- [x] Lecture 8
-- [x] Lecture 11
 - [ ] Lecture 12
+- [ ] Make Quiz
 
 #### Первое занятие [[link]](http://info.deephack.me/?p=572)
 Ссылка на лекции - [github](https://github.com/oxford-cs-deepnlp-2017/lectures)
