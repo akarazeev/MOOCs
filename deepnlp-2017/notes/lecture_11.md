@@ -1,4 +1,4 @@
-#### Lecture 11 - Question Answering
+### Lecture 11 - Question Answering
 
 - Source of answer
 - Semantic Parsing: Q -> Logical Form -> `KB` (Knowledge Base) Query -> Answer

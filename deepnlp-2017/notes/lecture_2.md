@@ -1,4 +1,4 @@
-##### Lecture 2a - Word Level Semantics
+### Lecture 2a - Word Level Semantics
 
 - Naive representation - one hot vectors. Problem: sparse and orthogonal
 - Idea: produce dense vector representation
@@ -18,7 +18,7 @@
     - **bag of vectors**
     - ...
 
-##### Lecture 2b - Overview of the Practicals
+### Lecture 2b - Overview of the Practicals
 
 - TED data
 - Toolkits

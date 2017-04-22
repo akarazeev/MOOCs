@@ -1,4 +1,4 @@
-#### Lecture 5 - Text Classification
+### Lecture 5 - Text Classification
 
 - Classification Tasks
     - pos/neg

@@ -1,4 +1,4 @@
-##### Lecture 4 - Language Modelling and RNNs Part 2
+### Lecture 4 - Language Modelling and RNNs Part 2
 
 - LMs aim to predict next word w_t by the history of observed text (w_1, ..., w_{t-1}):
     - count based n-gram LMs approximate the history with the previous n words

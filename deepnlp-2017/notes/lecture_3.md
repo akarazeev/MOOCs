@@ -1,4 +1,4 @@
-##### Lecture 3 - Language Modelling and RNNs Part 1
+### Lecture 3 - Language Modelling and RNNs Part 1
 
 - p(he likes apples) > p(apples likes he) - Translation
 - p(he likes apples) > p(he licks apples) - Speech Recognition

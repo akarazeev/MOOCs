@@ -1,4 +1,4 @@
-#### Lecture 7 - Conditional Language Models
+### Lecture 7 - Conditional Language Models
 
 - Unconditional LM assigns probs to seqs of words w=(w1, ..., wl)
 - Task: modeling prob of the next word by the history of prevs words

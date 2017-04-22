@@ -1,9 +1,9 @@
-##### Lecture 1a - Introduction
+### Lecture 1a - Introduction
 
 - I saw her duck.
 - It was the intro by the way :)
 
-##### Lecture 1b - Deep Neural Networks Are Our Friends
+### Lecture 1b - Deep Neural Networks Are Our Friends
 
 - Cost functions
 - Optimization

@@ -1,4 +1,4 @@
-#### Lecture 8 - Generating Language with Attention
+### Lecture 8 - Generating Language with Attention
 
 - Compressing a lot of information in a finite-sized vector
 - “You can't cram the meaning of a whole %&!$# sentence into a single $&!#* vector!"
