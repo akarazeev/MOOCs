@@ -1,0 +1,35 @@
+#### Lecture 8 - Generating Language with Attention
+
+- Compressing a lot of information in a finite-sized vector
+- “You can't cram the meaning of a whole %&!$# sentence into a single $&!#* vector!"
+- Represent a source sentence as a matrix
+    - vectors have the same size but the matrices have different amount of columns
+    - with Convolutional Nets
+    - most widely used matrix representation - Bidirectional RNNs
+        - forward representation - word and its left context
+        - reverse representation - word and its right context
+        - GRUs or LSTMs
+        - about dimensions for word embeddings: 500-1000-2000 dimensions are plenty for most of this problems
+        - pre-training is effective in tasks on low-resource machine translation
+        - "Multi-word expressions are a pain in the neck." - maybe LSTMs will help...
+- Generation from Matrices
+- High-level idea:
+    - generate output sentence word by word using an RNN
+    - at each position t the RNN receives **two** inputs:
+        - a vector of prevs output
+        - a vector "view" of the input matrix
+    - getting a fixed-sized vector from a matrix that changes over time:
+        - weighted sum of the columns of **F** (words) based on how important they are at the current time step (just a matrix-vector product **Fa_t**)
+        - the weighting if the input columns at each time-step (a_t) is called **attention**
+- What is attention component responsible for? How do we compute attention vector?
+- ... compute the **attention energy** ...
+- Nonlinear Attention-Energy Model
+- Model Variant
+- Early binding vs Late binding
+- Attention and Translation
+- **Image caption generation with attention**
+    - ConvNets
+    - attention vectors for images
+        - Deterministic soft attention
+        - Stochastic hard attention
+        - analogy with Reinforcement learning...

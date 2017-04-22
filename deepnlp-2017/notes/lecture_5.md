@@ -1,0 +1,46 @@
+#### Lecture 5 - Text Classification
+
+- Classification Tasks
+    - pos/neg
+    - topic
+    - hashtags for twitter
+- binary/multi-class/multi-label/clustering classification
+- Classification methods:
+    - By hand
+    - Rule-based
+    - Statistical
+- Text label - d, Class - c:
+    - how to represent d?
+    - how to calculate P(c|d)?
+- Possible Representations:
+    - Bag of words
+    - Hand-crafted features (makes use of NLP pipeline - ???)
+    - Learned feature representation
+- Generative vs Discriminative Models:
+    - **Generative** (joint) models: P(c, d)
+        - distribution of individual classes
+        - n-gram, HMM, IBM translation models, Naive Bayes
+        - Naive Bayes classifier
+            - the best class if the maximum a posteriori (MAP) class (Laplace smoothing)
+                - sentence/document structure not taken into account :(
+                - smoothing
+    - **Discriminative** (conditional) models: P(c|d)
+        - learn boundaries between classes
+        - log regression, max entropy models, conditional random fields, svm
+- Features Representations
+- Logistic Regression
+- Due to the Softmax function we not only construct a classifier but learn **probability distributions** over classifications
+- Representing Text with RNN
+- sigmoid function in text classification task with an RNN
+- Loss function for an RNN Classifier
+    - Multilayer Perceptron
+    - the cross-entropy loss is designed to deal with errors on probabilities
+- Dual Objective RNN
+- Bi-Directional RNN
+- Non-Sequential NNs:
+    - Recursive NNs
+        - Autoencoder Signals
+    - CNNs
+        - Convolutional layer with multiple filters
+        - Max-Pooling Layer
+        - R^{M x N x K} where M - number of input words, N - size of the input embeddings and K - number of feature maps

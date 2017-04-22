@@ -1,0 +1,42 @@
+##### Lecture 4 - Language Modelling and RNNs Part 2
+
+- LMs aim to predict next word w_t by the history of observed text (w_1, ..., w_{t-1}):
+    - count based n-gram LMs approximate the history with the previous n words
+    - neural n-gram LMs embed the fixed n-gram history in a continues space and thus capture correlations between histories
+    - RNN LMs use fixed n-gram history and compress the entire history in a foxed length vector, enabling long range correlations to be captured
+
+- Exploding and vanishing gradients
+    - partial derivatives ...
+    - if the largest eigenvalue of V_h is:
+        - 1, gradient will propagate
+        - \> 1, explodes
+        - < 1, vanishes
+    - if it explodes - we can't train our model because of infinity gradient
+    - if it vanishes - we are not going to learn long-range dependencies because of zero gradient
+- Changing the network architecture
+- Long short-term memory (LSTM):
+    - key modification of LSTM is replacing multiplication with sum
+    - there is a switch
+    - forget gate
+- Gated Recurrent Network (GRU)
+- Deep RNN LMs:
+    - how the hidden layer size affects a model size and computation complexity - quadratic
+    - skip connection - makes learning much quicker
+    - another option is increase depth in time dimension
+    - Problem: Large Vocabularies. Solutions:
+        - **Short-lists:** only most frequent words and traditional n-gram LM for the rest, but it nullifies the ability to generalize rare events.
+        - **Batch local short-lists:**  approximate the full partition function for data instances from a segment of the data with a subset of the vocabulary chosen for that segment.
+        - **Approximate the gradient/change the objective:** softmax(x) -> exp(x) * exp(c), where c is some constant (in practice c=0 is effective)
+        - **Noise Contrastive Estimation (NCE):** p(D=1 | \hat{p_n}) = \frac{\hat{p\_n}}{\hat{p\_n} + kp_{noise}(w\_n)}, where p_{noise} is unigram distribution for example
+        - **Importance Sampling**
+        - **Factorise the output vocabulary:** introduce word classes, p(w\_n | \hat{p\_n^{class}}, \hat{p_n^{word}}) = p(class(w_n)). With balanced classes we get sqrt(V) speedup
+        - by extending the factorization to a binary tree we can get a log(V) speedup (based Huffman coding is a poor choice): p(w_n | h_n) = \mult_i p(d_i | r_i, h_n) (the better choice is n-ary factorization tree)
+    - Sub-Word Level LM:
+        - change the input granularity and model text at the morpheme or character level
+        - pros: much smaller softmax and no unknown words
+        - cons: longer sequences and longer dependencies
+        - allows to capture subword structure and morphology
+- Regularization: **Dropout**
+    - large rnn often overfit their training data my memorizing the sequences they learn
+    - how apply dropout - do not zero all hidden units but apply it to non-recurrent connections
+    - Bayesian Dropout
