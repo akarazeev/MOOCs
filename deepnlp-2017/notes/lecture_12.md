@@ -41,9 +41,9 @@ Consider model (a^n b^n), n is never more than N.
 
 Express solution to the problem with just a few rules.
 
-"Where is Boltzman machine in this hierarchy?"
+"Where is Boltzmann machine in this hierarchy?"
 
-"learnable == representable ?"
+"learnable =?= representable ?"
 
 #### RNNs: More API than Model
 
@@ -55,7 +55,10 @@ Memory <--> Controller
 
 #### Attention
 
-Read Only Memory for Encoder-Decoder Models
+- `Early` Fusion - fusion scheme that integrates unimodal features before learning concepts
+- `Late` Fusion - fusion scheme that first reduces unimodal features to separately learned concept scores, then these scores are integrated to learn concepts
+
+Read Only Memory (ROM) for Encoder-Decoder Models
 
 `Recognizing Textual Entailment (RTE)`
 
