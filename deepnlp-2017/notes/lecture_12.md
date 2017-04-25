@@ -55,8 +55,8 @@ Memory <--> Controller
 
 #### Attention
 
-- `Early` Fusion - fusion scheme that integrates unimodal features before learning concepts
-- `Late` Fusion - fusion scheme that first reduces unimodal features to separately learned concept scores, then these scores are integrated to learn concepts
+- `Early` Fusion - the controller is updated and conditioned on inputs, previous state and some read from memory.
+- `Late` Fusion - internal state will tell the model which memory to look at, and use that to influence the outputs of controller.
 
 Read Only Memory (ROM) for Encoder-Decoder Models
 
