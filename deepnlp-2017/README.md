@@ -12,7 +12,7 @@
 | [[seminar 6](http://info.deephack.me/?p=598)]   | 7. Conditional Language Models            | [[lecture_7.md](notes/lecture_7.md)]      |
 | [[seminar 7](http://info.deephack.me/?p=607)]   | 8. Generating Language with Attention     | [[lecture_8.md](notes/lecture_8.md)]      |
 | [[seminar 8](http://info.deephack.me/?p=610)]   | 11. Question Answering                    | [[lecture_11.md](notes/lecture_11.md)]    |
-| [[seminar 9]()]                                 | 12. Memory                                | [[lecture_12.md](notes/lecture_12.md)]    |
+| [[seminar 9](http://info.deephack.me/?p=612)]                                 | 12. Memory                                | [[lecture_12.md](notes/lecture_12.md)]    |
 
 **TODO:**
 - [ ] Lecture 12
